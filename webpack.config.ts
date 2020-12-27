@@ -88,13 +88,13 @@ const config : Configuration = {
             template: path.join(__dirname, "src", "index.html"),
             scriptLoading: "defer"
         }),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: path.join(__dirname, "public"),
-                }
-            ]
-        })
+        // new CopyWebpackPlugin({
+        //     patterns: [
+        //         {
+        //             from: path.join(__dirname, "public"),
+        //         }
+        //     ]
+        // })
     ]
 };
 
