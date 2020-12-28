@@ -1,4 +1,4 @@
-//TODO: Complete the header.
+// TODO: Complete the header.
 import React, { FC } from "react";
 
 import style from "../style/header.module.scss"
