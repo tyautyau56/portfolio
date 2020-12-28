@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./style/App.module.scss";
+import styles from "../style/App.module.scss";
 
 const App: FC = () => (
     <div>

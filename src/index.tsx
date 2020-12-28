@@ -2,7 +2,7 @@ import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
 
 // components
-import App from "./App";
+import App from "./components/App";
 import Header from "./components/header";
 
 // global style
