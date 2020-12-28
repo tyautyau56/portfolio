@@ -1,7 +1,7 @@
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
 
-// component
+// components
 import App from "./App";
 import Header from "./components/header";
 
