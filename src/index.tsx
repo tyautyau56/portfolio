@@ -1,17 +1,17 @@
-import React, { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import React, { StrictMode } from 'react'
+import ReactDOM from 'react-dom'
 
 // components
-import App from "./components/App";
-import Header from "./components/header";
+import App from './components/App'
+import Header from './components/header'
 
 // global style
-import "./global.scss";
+import './global.scss'
 
 ReactDOM.render(
-    <StrictMode>
-        <Header />
-        <App />
-    </StrictMode>,
-    document.getElementById("root")
-);
+  <StrictMode>
+    <Header />
+    <App />
+  </StrictMode>,
+  document.getElementById('root')
+)
