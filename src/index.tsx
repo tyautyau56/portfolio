@@ -9,9 +9,9 @@ import Header from './components/header'
 import './global.scss'
 
 ReactDOM.render(
-  <StrictMode>
-    <Header />
-    <App />
-  </StrictMode>,
-  document.getElementById('root')
+    <StrictMode>
+        <Header />
+        <App />
+    </StrictMode>,
+    document.getElementById('root')
 )
