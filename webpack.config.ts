@@ -1,17 +1,15 @@
-import { Configuration } from "webpack";
 import * as path from "path";
 import sass from "sass";
 import fibers from "fibers";
 import {nodeModules} from "ts-loader/dist/constants";
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import CopyWebpackPlugin from "copy-webpack-plugin";
 
 const isProduction = process.env.NODE_ENV === "production";
 const isDevelopment = !isProduction;
 
 const baseURL = process.env.BASE_URL ?? "/";
 
-const config : Configuration = {
+module.exports = {
     target: "web",
     mode: isProduction ? "production" : "development",
     entry: {
@@ -87,15 +85,6 @@ const config : Configuration = {
             minify: isProduction,
             template: path.join(__dirname, "src", "index.html"),
             scriptLoading: "defer"
-        }),
-        // new CopyWebpackPlugin({
-        //     patterns: [
-        //         {
-        //             from: path.join(__dirname, "public"),
-        //         }
-        //     ]
-        // })
+        })
     ]
 };
-
-export default config;
