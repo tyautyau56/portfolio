@@ -6,7 +6,7 @@ import App from './components/App'
 import Header from './components/header'
 
 // global style
-import './global.scss'
+import './index.scss'
 
 ReactDOM.render(
     <StrictMode>
