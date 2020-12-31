@@ -1,7 +1,6 @@
 import * as path from "path";
 import sass from "sass";
 import fibers from "fibers";
-import {nodeModules} from "ts-loader/dist/constants";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
 const isProduction = process.env.NODE_ENV === "production";
