@@ -1,7 +1,7 @@
 // TODO: Complete the header.
 import React, { FC } from 'react'
 
-import style from '../style/header.module.scss'
+import style from '/src/style/header.module.scss'
 
 const setHeader: FC = () => (
     <header>
