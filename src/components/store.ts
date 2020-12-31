@@ -1,3 +1,4 @@
+// TODO: add performance thumbnail
 export const store = [
     {
         id: 1,
