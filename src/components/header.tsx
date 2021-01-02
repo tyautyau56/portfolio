@@ -1,12 +1,12 @@
 // TODO: Complete the header.
 import React, { FC } from 'react'
 
-import style from '/src/style/header.module.scss'
-
 const setHeader: FC = () => (
     <header>
-        <div>
-            <h2 className={style.title}>tyautyau56's portfolio</h2>
+        <div className="wrapper">
+            <h1 className="title">
+                tyautyau56
+            </h1>
         </div>
     </header>
 )
