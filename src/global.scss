@@ -2,17 +2,24 @@
 
 $orange: #ff8e1e;
 $background: #0c0f13;
-$red : hsla(0, 100%, 50%, 0.5);
+$red: hsla(0, 100%, 50%, 0.5);
 $cyan: hsla(180, 100%, 50%, 0.5);
+$textColor: #bcbcbc;
+$aHovered: #33ffcc;
 
 *,
 ::after,
 ::before {
+    box-sizing: content-box;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', 'M PLUS Rounded 1c', sans-serif;
-    box-sizing: content-box;
     background: $background;
+    color: $textColor;
+    line-height: 1.5em;
 }
 
 #root {
@@ -22,12 +29,17 @@ $cyan: hsla(180, 100%, 50%, 0.5);
 
 a {
     text-decoration: none;
-    border-bottom: dotted 1px $orange;
+    border-bottom: dotted 1px;
     color: $orange;
-
+    transition: color 0.5s;
     &:hover {
-        color: #007ffe;
+        color: $aHovered;
     }
+}
+
+h2 {
+    font-size: 2em;
+    color: #e0e0e0;
 }
 
 header {
@@ -35,10 +47,27 @@ header {
     .title {
         font-family: 'Audiowide', sans-serif;
         text-shadow: -2px 0 $orange, 2px 0 $cyan;
-        color: hsla(0, 0%, 0%, 0.0);
+        color: hsla(0, 0%, 0%, 0);
+        cursor: default;
+        user-select: none;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+@mixin section_style {
+    @for $value from 1 through 3 {
+        #section_#{$value} {
+            width: 70%;
+            margin: 0 auto;
+        }
     }
 }
 
 #main {
-    text-align: center;
+    text-align: left;
+    @include section_style;
 }
