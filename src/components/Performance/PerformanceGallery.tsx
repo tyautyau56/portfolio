@@ -1,13 +1,11 @@
-import React, {FC} from 'react'
+import React, { FC } from 'react'
 import Performance from './Performance'
 import { PERFORMANCE_DETAILS } from './store'
 
 const PerformanceGallery: FC = () => {
-    return(
-        <div>
+    return <div>
 
-        </div>
-    )
+    </div>
 }
 
 export default PerformanceGallery
