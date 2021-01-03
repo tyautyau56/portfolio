@@ -1,0 +1,11 @@
+#loding {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+
+  &.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
