@@ -1,16 +1,17 @@
 import React, { StrictMode } from 'react'
-import ReactDOM from 'react-dom'
+import {render} from 'react-dom'
 
 // components
 import Header from './components/header'
 import PerformanceGallery from './components/Performance/PerformanceGallery'
-import Loder from './components/loding'
+import Loder from './components/loder/loding'
 
 // global style
 import './global.scss'
 
-ReactDOM.render(
+render(
     <StrictMode>
+        <Loder />
         <Header />
         <div id='main'>
             <section id='section_1' className='introduce'>
