@@ -1,6 +1,11 @@
 import React, { StrictMode } from 'react'
 import {render} from 'react-dom'
 
+// fontawesome
+import {library} from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fas)
+
 // components
 import Header from './components/header'
 import PerformanceGallery from './components/Performance/PerformanceGallery'
