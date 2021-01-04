@@ -38,12 +38,14 @@ a {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #e0e0e0;
 }
 
 header {
     text-align: center;
+    width: 100vw;
+    height: 100vh;
     .title {
         font-family: 'Audiowide', sans-serif;
         text-shadow: -2px 0 $orange, 2px 0 $cyan;
