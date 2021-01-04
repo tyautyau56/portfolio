@@ -1,8 +1,8 @@
 import React, { StrictMode } from 'react'
-import {render} from 'react-dom'
+import { render } from 'react-dom'
 
 // fontawesome
-import {library} from '@fortawesome/fontawesome-svg-core'
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 library.add(fas)
 
@@ -23,7 +23,10 @@ render(
                 <h2>Self-Introduction</h2>
                 <p>
                     web開発やドラムをしている高専生です.いつもはNITTCの同学年でやっている
-                    <a href='https://github.com/tokuyama-it' target='_blank' rel="noreferrer">
+                    <a
+                        href='https://github.com/tokuyama-it'
+                        target='_blank'
+                        rel='noreferrer'>
                         ITをむさぼる会
                     </a>
                     で活動をしています. TypeScriptとRustを勉強中です.

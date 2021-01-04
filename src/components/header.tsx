@@ -1,6 +1,6 @@
 // TODO: Complete the header.
 import React, { FC } from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const setHeader: FC = () => (
     <header>

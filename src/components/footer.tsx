@@ -1,7 +1,7 @@
-import React, {FC} from 'react'
+import React, { FC } from 'react'
 
 const setFooter: FC = () => {
-    return(
+    return (
         <div>
 
         </div>
