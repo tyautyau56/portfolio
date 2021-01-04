@@ -1,7 +1,6 @@
 import React from 'react'
 import webpack from 'webpack'
 
-
 class Performance extends React.Component<{
     id: any
     image: any
