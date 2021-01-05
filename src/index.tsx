@@ -4,19 +4,21 @@ import { render } from 'react-dom'
 // fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-library.add(fas)
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fas, fab)
 
 // components
 import Header from './components/header'
 import PerformanceGallery from './components/Performance/PerformanceGallery'
-import Loder from './components/loder/loding'
+import Loder from './components/loading'
+import Footer from './components/footer'
 
 // global style
 import './global.scss'
 
 render(
     <StrictMode>
-        <Loder />
+        {/*<Loder />*/}
         <Header />
         <div id='main'>
             <section id='section_1' className='introduce'>
@@ -47,6 +49,7 @@ render(
                 <PerformanceGallery />
             </section>
         </div>
+        <Footer />
     </StrictMode>,
     document.getElementById('root')
 )

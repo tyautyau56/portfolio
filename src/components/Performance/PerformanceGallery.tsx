@@ -1,8 +1,6 @@
-import React, { FC } from 'react'
+import React from 'react'
 import Performance from './Performance'
-import { PERFORMANCE_DETAILS } from './store'
-
-const detail = PERFORMANCE_DETAILS
+import { PERFORMANCE_DETAILS as detail } from './store'
 
 class PerformanceGallery extends React.Component<any, any> {
     render() {

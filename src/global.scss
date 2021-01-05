@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=M+PLUS+Rounded+1c:wght@300&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Raleway:wght@500&display=swap');
 
 $orange: #ff8e1e;
 $background: #0c0f13;
@@ -20,6 +20,7 @@ body {
     background: $background;
     color: $textColor;
     line-height: 1.5em;
+    text-align: center;
 }
 
 #root {
@@ -29,30 +30,11 @@ body {
 
 a {
     text-decoration: none;
-    border-bottom: dotted 1px;
-    color: $orange;
-    transition: color 0.5s;
-    &:hover {
-        color: $aHovered;
-    }
 }
 
 h2 {
     font-size: 1.5em;
     color: #e0e0e0;
-}
-
-header {
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    .title {
-        font-family: 'Audiowide', sans-serif;
-        text-shadow: -2px 0 $orange, 2px 0 $cyan;
-        color: hsla(0, 0%, 0%, 0);
-        cursor: default;
-        user-select: none;
-    }
 }
 
 ul {
@@ -72,4 +54,13 @@ ul {
 #main {
     text-align: left;
     @include section_style;
+    a {
+        text-decoration: none;
+        border-bottom: dotted 1px;
+        color: $orange;
+        transition: color 0.5s;
+        &:hover {
+            color: $aHovered;
+        }
+    }
 }
