@@ -16,6 +16,11 @@ import Footer from '../components/footer'
 import '../global.scss'
 
 class App extends React.Component<any, any> {
+    // componentDidMount() {
+    //     const element: any = document.getElementById('loading')
+    //     element.classList.add('loaded')
+    // }
+
     render() {
         return (
             <StrictMode>
