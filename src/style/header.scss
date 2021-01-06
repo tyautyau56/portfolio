@@ -3,10 +3,11 @@
 $cyan: hsla(180, 100%, 50%, 0.5);
 $orange: #ff8e1e;
 $textColor: #bcbcbc;
+$githubColor: rgb(188, 188, 188);
 
 header {
-    text-align: center;
-    width: 100vw;
+    margin: 0 auto;
+    width: 70%;
     height: 100vh;
     .title {
         font-family: 'Audiowide', sans-serif;
@@ -17,16 +18,19 @@ header {
     }
     ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         a {
             color: $textColor;
             .twitter {
+                transition: color .5s;
                 &:hover {
                     color: rgb(29, 161, 242);
                 }
             }
             .github {
+                transition: color .5s;
                 &:hover {
+                    color: invert($githubColor);
                 }
             }
         }
