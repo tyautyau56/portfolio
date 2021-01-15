@@ -17,10 +17,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', 'M PLUS Rounded 1c', sans-serif;
-    background: $background;
     color: $textColor;
     line-height: 1.5em;
     text-align: center;
+    background-color: $background;
 }
 
 #root {
