@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './peformance.scss'
+
 class Performance extends React.Component<
     {
         id: any
@@ -13,19 +15,17 @@ class Performance extends React.Component<
     render() {
         let { id, image, name, description, url } = this.props
         return (
-            <div>
-                <article key={id}>
+            <article key={id} className="gallery">
+                <a href={url} target='_blank' rel='noreferrer'>
+                    <img src={image} alt={name} />
+                </a>
+                <h3>
                     <a href={url} target='_blank' rel='noreferrer'>
-                        <img src={image} alt={name} />
+                        {name}
                     </a>
-                    <h3>
-                        <a href={url} target='_blank' rel='noreferrer'>
-                            {name}
-                        </a>
-                    </h3>
-                    <p>{description}</p>
-                </article>
-            </div>
+                </h3>
+                <p>{description}</p>
+            </article>
         )
     }
 }
