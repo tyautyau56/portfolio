@@ -15,7 +15,7 @@ class Performance extends React.Component<
     render() {
         let { id, image, name, description, url } = this.props
         return (
-            <article key={id} className="gallery">
+            <article key={id} className='gallery'>
                 <a href={url} target='_blank' rel='noreferrer'>
                     <img src={image} alt={name} />
                 </a>
