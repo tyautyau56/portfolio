@@ -1,36 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
+
+$background: #0c0f13;
 $cyan: hsla(180, 100%, 50%, 0.5);
 $orange: #ff8e1e;
 $textColor: #bcbcbc;
 $githubColor: rgb(188, 188, 188);
 
-header {
-    margin: 0 auto;
-    width: 70%;
+.section_header {
+    background-color: $background;
     height: 100vh;
-    .title {
-        font-family: 'Audiowide', sans-serif;
-        text-shadow: -2px 0 $orange, 2px 0 $cyan;
-        color: hsla(0, 0%, 0%, 0);
-        cursor: default;
-        user-select: none;
-    }
-    ul {
-        display: flex;
-        justify-content: space-around;
-        a {
-            color: $textColor;
-            .twitter {
-                transition: color .5s;
-                &:hover {
-                    color: rgb(29, 161, 242);
+    width: 100vw;
+    header {
+        margin: 0 auto;
+        width: 70%;
+        .title {
+            font-family: 'Audiowide', sans-serif;
+            text-shadow: -2px 0 $orange, 2px 0 $cyan;
+            color: hsla(0, 0%, 0%, 0);
+            cursor: default;
+            user-select: none;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            a {
+                color: $textColor;
+                .twitter {
+                    transition: color 0.5s;
+                    &:hover {
+                        color: rgb(29, 161, 242);
+                    }
                 }
-            }
-            .github {
-                transition: color .5s;
-                &:hover {
-                    color: invert($githubColor);
+                .github {
+                    transition: color 0.5s;
+                    &:hover {
+                        color: invert($githubColor);
+                    }
                 }
             }
         }
