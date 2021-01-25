@@ -1,0 +1,24 @@
+$background: #0c0f13;
+$aHovered: #33ffcc;
+$textColor: #bcbcbc;
+
+.footer {
+  width: 100vw;
+  .footer::after {
+    content: "";
+    width: 100vw;
+    height: 45px;
+    transform: rotate(-45deg);
+    background-color: $background;
+  }
+}
+
+a {
+  text-decoration: none;
+  border-bottom: dotted 1px;
+  color: $textColor;
+  transition: color 0.5s;
+  &:hover {
+    color: $aHovered;
+  }
+}
