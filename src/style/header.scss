@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-
-$background: #0c0f13;
+$background: #011931;
 $cyan: hsla(180, 100%, 50%, 0.5);
 $orange: #ff8e1e;
 $textColor: #bcbcbc;
 $githubColor: rgb(188, 188, 188);
 
 .section_header {
+    margin-top: 3%;
     background-color: $background;
     height: 100vh;
     width: 100vw;
+    transform: skew(0deg, 3deg);
     header {
+        transform: skew(0deg, -3deg);
         margin: 0 auto;
         width: 70%;
         .title {
+            padding-top: 25px;
             font-family: 'Audiowide', sans-serif;
             text-shadow: -2px 0 $orange, 2px 0 $cyan;
             color: hsla(0, 0%, 0%, 0);
