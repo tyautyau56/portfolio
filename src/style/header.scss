@@ -5,17 +5,29 @@ $cyan: hsla(180, 100%, 50%, 0.5);
 $orange: #ff8e1e;
 $textColor: #bcbcbc;
 $githubColor: rgb(188, 188, 188);
+$shadowColor: #8b8b8b;
 
 .section_header {
-    margin-top: 3%;
+    box-shadow: 2px 2px 20px $shadowColor;
+    margin-top: 2%;
     background-color: $background;
     height: 100vh;
     width: 100vw;
     transform: skew(0deg, 3deg);
-    header {
+    position: relative;
+    .wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
         transform: skew(0deg, -3deg);
-        margin: 0 auto;
+        height: 70vh;
         width: 70%;
+        .icon {
+            filter: drop-shadow(0 0 5px #000);
+        }
         .title {
             padding-top: 25px;
             font-family: 'Audiowide', sans-serif;
