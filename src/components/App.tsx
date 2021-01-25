@@ -38,8 +38,7 @@ class App extends React.Component<any, any> {
                                     rel='noreferrer'>
                                     ITをむさぼる会
                                 </a>
-                                で活動をしています.
-                                TypeScriptとRustを勉強中です.
+                                で活動中. TypeScriptとRustを勉強中です.
                             </p>
                         </article>
                         <article className='wrapper'>
