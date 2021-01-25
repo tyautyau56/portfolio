@@ -27,43 +27,42 @@ class App extends React.Component<any, any> {
                 {/*<Loder />*/}
                 <Header />
                 <div id='main'>
-                    <div className="contents_slanted">
-                        <section id='section_1' className='introduce'>
-                            <article className="wrapper">
-                                <h2>Self-Introduction</h2>
-                                <p>
-                                    web開発やドラムをしている高専生です.いつもはNITTCの同学年でやっている
-                                    <a
-                                        href='https://github.com/tokuyama-it'
-                                        target='_blank'
-                                        rel='noreferrer'>
-                                        ITをむさぼる会
-                                    </a>
-                                    で活動をしています. TypeScriptとRustを勉強中です.
-                                </p>
-                            </article>
-                            <article className="wrapper">
-                                <h2>Education Background</h2>
-                                <ul>
-                                    <li>2019年 3月 周南市立須々万中学校卒業</li>
-                                    <li>
-                                        2019年 4月 徳山工業高等専門学校 情報電子工学科
-                                        入学
-                                    </li>
-                                    <li>
-                                        2019年〜現在 徳山工業高等専門学校 情報電子工学科
-                                        在学中
-                                    </li>
-                                </ul>
-                            </article>
-                        </section>
-                        <section id='section_2' className='performance'>
-                            <article className="wrapper">
-                                <h2>Recent Work</h2>
-                                <PerformanceGallery />
-                            </article>
-                        </section>
-                    </div>
+                    <section id='section_1' className='introduce'>
+                        <article className='wrapper'>
+                            <h2>Self-Introduction</h2>
+                            <p>
+                                web開発やドラムをしている高専生です.いつもはNITTCの同学年でやっている
+                                <a
+                                    href='https://github.com/tokuyama-it'
+                                    target='_blank'
+                                    rel='noreferrer'>
+                                    ITをむさぼる会
+                                </a>
+                                で活動をしています.
+                                TypeScriptとRustを勉強中です.
+                            </p>
+                        </article>
+                        <article className='wrapper'>
+                            <h2>Education Background</h2>
+                            <ul>
+                                <li>2019年 3月 周南市立須々万中学校卒業</li>
+                                <li>
+                                    2019年 4月 徳山工業高等専門学校
+                                    情報電子工学科 入学
+                                </li>
+                                <li>
+                                    2019年〜現在 徳山工業高等専門学校
+                                    情報電子工学科 在学中
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section id='section_2' className='performance'>
+                        <article className='wrapper'>
+                            <h2>Recent Work</h2>
+                            <PerformanceGallery />
+                        </article>
+                    </section>
                 </div>
                 <Footer />
             </StrictMode>
