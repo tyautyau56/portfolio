@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-$background: #011931;
+$background: #00a381;
 $cyan: hsla(180, 100%, 50%, 0.5);
 $orange: #ff8e1e;
 $textColor: #bcbcbc;
 $githubColor: rgb(188, 188, 188);
 $shadowColor: #8b8b8b;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .section_header {
     box-shadow: 2px 2px 20px $shadowColor;
-    margin-top: 2%;
     background-color: $background;
     height: 100vh;
     width: 100vw;
@@ -23,10 +26,13 @@ $shadowColor: #8b8b8b;
         left: 0;
         margin: auto;
         transform: skew(0deg, -3deg);
-        height: 70vh;
+        height: 100%;
         width: 70%;
         .icon {
-            filter: drop-shadow(0 0 5px #000);
+            height: 140px;
+            width: 140px;
+            filter: drop-shadow(0 0 .75em #000);
+            margin-top: 25%;
         }
         .title {
             padding-top: 25px;
@@ -36,6 +42,11 @@ $shadowColor: #8b8b8b;
             cursor: default;
             user-select: none;
         }
+        .badge {
+            img {
+                margin-left: 5px;
+            }
+        }
         ul {
             display: flex;
             justify-content: space-around;
@@ -43,17 +54,21 @@ $shadowColor: #8b8b8b;
                 color: $textColor;
                 .twitter {
                     transition: color 0.5s;
+                    filter: drop-shadow(0 0 .25em #000);
                     &:hover {
                         color: rgb(29, 161, 242);
                     }
                 }
                 .github {
                     transition: color 0.5s;
+                    filter: drop-shadow(0 0 .25em #000);
                     &:hover {
                         color: invert($githubColor);
                     }
                 }
             }
+        }
+        .arrow-icon {
         }
     }
 }
