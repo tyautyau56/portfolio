@@ -48,22 +48,26 @@ html {
             }
         }
         ul {
-            display: flex;
-            justify-content: space-around;
-            a {
-                color: $textColor;
-                .twitter {
-                    transition: color 0.5s;
-                    filter: drop-shadow(0 0 .25em #000);
-                    &:hover {
-                        color: rgb(29, 161, 242);
+            //display: flex;
+            //justify-content: space-around;
+            li {
+                display: inline-block;
+                margin-left: 20px;
+                a {
+                    color: $textColor;
+                    .twitter {
+                        transition: color 0.5s;
+                        filter: drop-shadow(0 0 .25em #000);
+                        &:hover {
+                            color: rgb(29, 161, 242);
+                        }
                     }
-                }
-                .github {
-                    transition: color 0.5s;
-                    filter: drop-shadow(0 0 .25em #000);
-                    &:hover {
-                        color: invert($githubColor);
+                    .github {
+                        transition: color 0.5s;
+                        filter: drop-shadow(0 0 .25em #000);
+                        &:hover {
+                            color: invert($githubColor);
+                        }
                     }
                 }
             }

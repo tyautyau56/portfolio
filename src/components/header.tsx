@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import '../style/header.scss'
 
-// @ts-ignore
 import icon from '/resources/icon.png'
 
 const setHeader: FC = () => (
