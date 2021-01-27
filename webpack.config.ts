@@ -73,13 +73,22 @@ module.exports = {
                                 fiber: fibers,
                             },
                         },
-                    },
+                    }
                 ],
+            },
+            {
+                test: /\.(jpg|png)$/,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ]
             }
         ]
     },
     devServer:{
         historyApiFallback: true,
+        contentBase: __dirname + '/dist'
     },
     plugins: [
         new HtmlWebpackPlugin({
