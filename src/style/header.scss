@@ -31,7 +31,7 @@ html {
         .icon {
             height: 140px;
             width: 140px;
-            filter: drop-shadow(0 0 .75em #000);
+            filter: drop-shadow(0 0 0.75em #000);
             margin-top: 25%;
         }
         .title {
@@ -57,14 +57,14 @@ html {
                     color: $textColor;
                     .twitter {
                         transition: color 0.5s;
-                        filter: drop-shadow(0 0 .25em #000);
+                        filter: drop-shadow(0 0 0.25em #000);
                         &:hover {
                             color: rgb(29, 161, 242);
                         }
                     }
                     .github {
                         transition: color 0.5s;
-                        filter: drop-shadow(0 0 .25em #000);
+                        filter: drop-shadow(0 0 0.25em #000);
                         &:hover {
                             color: invert($githubColor);
                         }
