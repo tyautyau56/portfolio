@@ -4,11 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import '../style/header.scss'
 
+// @ts-ignore
+import icon from '/resources/icon.png'
+
 const setHeader: FC = () => (
     <section className='section_header'>
         <div className='wrapper'>
             <img
-                src='/resources/icon.png'
+                src={icon}
                 alt="tyautyau56's avatar"
                 className='icon'
             />
