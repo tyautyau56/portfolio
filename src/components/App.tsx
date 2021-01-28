@@ -24,7 +24,6 @@ class App extends React.Component<any, any> {
     render() {
         return (
             <StrictMode>
-                {/*<Loder />*/}
                 <Header />
                 <div id='main'>
                     <section id='section_1' className='introduce'>
@@ -56,8 +55,14 @@ class App extends React.Component<any, any> {
                             </ul>
                         </article>
                     </section>
-                    <section id='section_2' className='performance'>
+                    <section id='section_2' className='skill'>
                         <article className='wrapper'>
+                            <h2>Skill</h2>
+
+                        </article>
+                    </section>
+                    <section id="section_3" className="performance">
+                        <article className="wrapper">
                             <h2>Recent Work</h2>
                             <PerformanceGallery />
                         </article>

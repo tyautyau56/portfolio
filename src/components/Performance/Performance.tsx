@@ -2,16 +2,15 @@ import React from 'react'
 
 import './peformance.scss'
 
-class Performance extends React.Component<
-    {
-        id: any
-        image: any
-        name: any
-        description: any
-        url: any
-    },
-    any
-> {
+interface propType {
+    id: number,
+    image: string,
+    name: string,
+    description: string,
+    url: string
+}
+
+class Performance extends React.Component<propType, any> {
     render() {
         let { id, image, name, description, url } = this.props
         return (

@@ -71,6 +71,14 @@ ul {
                     margin: 0 auto;
                 }
             }
+            @if $value == 3 {
+                transform: skew(0deg, -3deg);
+                .wrapper {
+                    transform: skew(0deg, 3deg);
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
         }
     }
 }
