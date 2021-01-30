@@ -58,7 +58,7 @@ class App extends React.Component<any, any> {
                     <section id='section_2' className='skill'>
                         <article className='wrapper'>
                             <h2>Skill</h2>
-
+                            <p>skill</p>
                         </article>
                     </section>
                     <section id="section_3" className="performance">
