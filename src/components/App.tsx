@@ -8,7 +8,6 @@ library.add(fas, fab)
 
 // components
 import Header from '../components/header'
-import PerformanceGallery from '../components/Performance/PerformanceGallery'
 import Footer from '../components/footer'
 import Skill from '../components/skill'
 
@@ -54,12 +53,6 @@ class App extends React.Component<any, any> {
                         <article className='wrapper'>
                             <h2>Skill</h2>
                             <Skill />
-                        </article>
-                    </section>
-                    <section id="section_3" className="performance">
-                        <article className="wrapper">
-                            <h2>Recent Work</h2>
-                            <PerformanceGallery />
                         </article>
                     </section>
                 </div>
