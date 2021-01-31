@@ -83,12 +83,20 @@ module.exports = {
                         loader: 'url-loader'
                     }
                 ]
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: 'react-svg-loader',
+                    }
+                ]
             }
         ]
     },
     devServer:{
         historyApiFallback: true,
-        contentBase: __dirname + '/dist'
+        contentBase: path.join(__dirname, "dist")
     },
     plugins: [
         new HtmlWebpackPlugin({

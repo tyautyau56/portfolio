@@ -8,19 +8,13 @@ library.add(fas, fab)
 
 // components
 import Header from '../components/header'
-import PerformanceGallery from '../components/Performance/PerformanceGallery'
-import Loder from '../components/loading'
 import Footer from '../components/footer'
+import Skill from '../components/skill'
 
 // global style
 import '../global.scss'
 
 class App extends React.Component<any, any> {
-    // componentDidMount() {
-    //     const element: any = document.getElementById('loading')
-    //     element.classList.add('loaded')
-    // }
-
     render() {
         return (
             <StrictMode>
@@ -58,13 +52,7 @@ class App extends React.Component<any, any> {
                     <section id='section_2' className='skill'>
                         <article className='wrapper'>
                             <h2>Skill</h2>
-                            <p>skill</p>
-                        </article>
-                    </section>
-                    <section id="section_3" className="performance">
-                        <article className="wrapper">
-                            <h2>Recent Work</h2>
-                            <PerformanceGallery />
+                            <Skill />
                         </article>
                     </section>
                 </div>
