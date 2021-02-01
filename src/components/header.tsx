@@ -57,12 +57,6 @@ const setHeader: FC = () => (
                     </a>
                 </li>
             </ul>
-            <a href='#main'>
-                <FontAwesomeIcon
-                    icon={['fas', 'chevron-circle-down']}
-                    className='fa-2x arrow-icon'
-                />
-            </a>
         </div>
     </section>
 )
