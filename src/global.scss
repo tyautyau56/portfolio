@@ -2,12 +2,17 @@
 $orange: #ff8e1e;
 $background: #efefef;
 $section_back_color: #fff;
-$red: hsla(0, 100%, 50%, 0.5);
-$cyan: hsla(180, 100%, 50%, 0.5);
+$red: hsla(0,
+100%,
+50%,
+0.5);
+$cyan: hsla(180,
+100%,
+50%,
+0.5);
 $textColor: #444444;
-$aHovered: #33ff00;
+$aHovered: #00a381;
 $shadowColor: #8b8b8b;
-
 *,
 ::after,
 ::before {
@@ -28,12 +33,7 @@ body {
     width: 100vw;
     overflow: hidden;
     background-color: #d9afd9;
-    background-image: linear-gradient(
-            0deg,
-            #ffe0ff 0%,
-            #97d9e1 50%,
-            #ffffff 100%
-    );
+    background-image: linear-gradient( 0deg, #ffe0ff 0%, #97d9e1 50%, #ffffff 100%);
 }
 
 a {
@@ -58,7 +58,7 @@ ul {
             padding: 80px 0;
             background-color: $section_back_color;
             box-shadow: 2px 2px 20px $shadowColor;
-            @if $value == 1 {
+            @if $value==1 {
                 transform: skew(0deg, -3deg);
                 .wrapper {
                     transform: skew(0deg, 3deg);
@@ -66,7 +66,7 @@ ul {
                     margin: 0 auto;
                 }
             }
-            @if $value == 2 {
+            @if $value==2 {
                 transform: skew(0deg, 3deg);
                 .wrapper {
                     transform: skew(0deg, -3deg);
@@ -74,7 +74,7 @@ ul {
                     margin: 0 auto;
                 }
             }
-            @if $value == 3 {
+            @if $value==3 {
                 transform: skew(0deg, -3deg);
                 .wrapper {
                     transform: skew(0deg, 3deg);
@@ -99,4 +99,3 @@ ul {
         }
     }
 }
-

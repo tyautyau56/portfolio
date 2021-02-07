@@ -1,8 +1,5 @@
 .galleryIcon {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    .icon {
-        margin: 12px;
-    }
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 }
