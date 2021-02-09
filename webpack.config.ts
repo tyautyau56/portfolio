@@ -6,7 +6,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 const isProduction = process.env.NODE_ENV === "production";
 const isDevelopment = !isProduction;
 
-const baseURL = process.env.BASE_URL ?? "./";
+const baseURL = process.env.BASE_URL ?? "/";
 
 module.exports = {
     target: "web",
@@ -95,8 +95,7 @@ module.exports = {
         ]
     },
     devServer:{
-        historyApiFallback: true,
-        contentBase: path.join(__dirname, "dist")
+        historyApiFallback: true
     },
     plugins: [
         new HtmlWebpackPlugin({
