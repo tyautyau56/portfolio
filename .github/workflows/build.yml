@@ -2,6 +2,8 @@ name: CI
 on:
     push:
         branches: [ main ]
+        paths:
+            - './src/**/*.{js,scss,json,css,ts,tsx,jsx}'
     pull_request:
         branches: [ main ]
 jobs:
