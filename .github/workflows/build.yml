@@ -16,20 +16,18 @@ jobs:
             - uses: actions/checkout@v2
               with:
                   ref: ${{github.event.pull_request.head.ref}}
-            - name: install and build
+            - name: install and build & push the built app to the main branch
               run: |
                   npm ci
                   npm run build
-              env:
-                  CI: true
-            - name: push the built app to the main branch
-              run: |
                   git config --global user.name "tyautyau56"
                   git config --global user.email "tyautyau56@gmail.com"
                   git add .
                   git commit -m 'app build & push main branch!' && git push ${REPO} HEAD:${{github.event.pull_request.head.ref}} || true
                   git pull
                   git push origin main
+              env:
+                  CI: true
             - name: merge pull request
               uses: actions/github-script@0.4.0
               with:
