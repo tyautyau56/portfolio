@@ -7,10 +7,6 @@ $textColor: #bcbcbc;
 $githubColor: rgb(188, 188, 188);
 $shadowColor: #8b8b8b;
 
-html {
-    scroll-behavior: smooth;
-}
-
 .section_header {
     box-shadow: 2px 2px 20px $shadowColor;
     background-color: $background;

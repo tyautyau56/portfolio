@@ -1,11 +1,11 @@
 import React, { FC } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import '../style/header.scss'
+import '../style/Top.scss'
 
 import icon from '/resources/icon.png'
 
-const setHeader: FC = () => (
+const Top: FC = () => (
     <section className='section_header'>
         <div className='wrapper'>
             <img src={icon} alt="tyautyau56's avatar" className='icon' />
@@ -61,4 +61,4 @@ const setHeader: FC = () => (
     </section>
 )
 
-export default setHeader
+export default Top
