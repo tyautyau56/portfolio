@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import '../style/footer.scss'
+import '../style/Bottom.scss'
 
 const Bottom: FC = () => {
     return (
