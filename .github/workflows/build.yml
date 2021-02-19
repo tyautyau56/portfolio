@@ -26,5 +26,5 @@ jobs:
                   git config --local user.email "tyautyau56@gmail.com"
                   git add .
                   git commit -m "app build & push main branch!" -a
-                  git pull
+                  git pull origin main
                   git push origin main
