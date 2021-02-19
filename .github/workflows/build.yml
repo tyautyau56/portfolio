@@ -12,11 +12,10 @@ jobs:
             matrix:
                 node-version: ['12.x']
         steps:
-            - name: Checkout
+            - name: install and build & push the built app to the main branch
             - uses: actions/checkout@v2
               with:
                   ref: ${{github.event.pull_request.head.ref}}
-            - name: install and build & push the built app to the main branch
               run: |
                   npm ci
                   npm run build
