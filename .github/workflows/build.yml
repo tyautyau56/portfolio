@@ -20,3 +20,10 @@ jobs:
                   npm run build
               env:
                   CI: true
+            -   name: push the built app to the main branch
+                run: |
+                    git config --local user.name "tyautyau56"
+                    git config --local user.email "tyautyau56@gmail.com"
+                    git add .
+                    git commit -m "app build & push main branch!"
+                    git push origin main
