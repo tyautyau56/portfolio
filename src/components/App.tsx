@@ -7,9 +7,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fas, fab)
 
 // components
-import Header from '../components/header'
-import Footer from '../components/footer'
-import Skill from '../components/skill'
+import Top from './Top'
+import Footer from './Bottom'
+import Skill from './skill'
 
 // global style
 import '../global.scss'
@@ -18,9 +18,9 @@ class App extends React.Component<any, any> {
     render() {
         return (
             <StrictMode>
-                <Header />
+                <Top />
                 <div id='main'>
-                    <section id='section_1' className='introduce'>
+                    <section id='section_1' className='about'>
                         <article className='wrapper'>
                             <h2>Self-Introduction</h2>
                             <p>

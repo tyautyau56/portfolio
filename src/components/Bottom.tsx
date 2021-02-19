@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 
-import '../style/footer.scss'
+import '../style/Bottom.scss'
 
-const setFooter: FC = () => {
+const Bottom: FC = () => {
     return (
         <section className='footer'>
             <div className='inner'>
@@ -21,4 +21,4 @@ const setFooter: FC = () => {
     )
 }
 
-export default setFooter
+export default Bottom
