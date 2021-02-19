@@ -1,22 +1,22 @@
 name: CI
 on:
-    push:
-        branches: [ main ]
-        paths:
-            - './src/**/*.{js,scss,json,css,ts,tsx,jsx}'
     pull_request:
-        branches: [ main ]
+        types:
+            - opened
 jobs:
     build:
         runs-on: ubuntu-latest
+        env:
+            REPO: https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git
         strategy:
             matrix:
                 node-version: ['12.x']
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
+            - uses: actions/checkout@v2
+              with:
+                  ref: ${{github.event.pull_request.head.ref}}
             - name: install and build
-              uses: tyautyau56/portfolio@main
               run: |
                   npm ci
                   npm run build
@@ -24,9 +24,19 @@ jobs:
                   CI: true
             - name: push the built app to the main branch
               run: |
-                  git config --local user.name "tyautyau56"
-                  git config --local user.email "tyautyau56@gmail.com"
+                  git config --global user.name "tyautyau56"
+                  git config --global user.email "tyautyau56@gmail.com"
                   git add .
-                  git commit -m "app build & push main branch!" -a
+                  git commit -m 'app build & push main branch!' && git push ${REPO} HEAD:${{github.event.pull_request.head.ref}} || true
                   git pull
                   git push origin main
+            - name: merge pull request
+              uses: actions/github-script@0.4.0
+              with:
+                  github-token: ${{select.GITHUB_TOKEN}}
+                  script: |
+                      github.pulls.merge({
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      pull_number: context.payload.pull._request.number
+                      })
