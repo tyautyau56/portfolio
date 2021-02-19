@@ -27,4 +27,4 @@ jobs:
                   git add .
                   git commit -m "app build & push main branch!" -a
                   git pull
-                  git push origin HEAD:main
+                  git push origin main
