@@ -7,7 +7,7 @@ const Bottom: FC = () => {
         <section className='footer'>
             <div className='inner'>
                 <p>
-                    &copy; 2020
+                    &copy; 2020 - 2021
                     <a
                         href='https://github.com'
                         target='_blank'
