@@ -10,7 +10,7 @@ type Prop = {
     children?: never
 }
 
-const Card: React.FC<Prop> = (props) => {
+const Card: React.VFC<Prop> = (props) => {
     return (
         <div className='p-4'>
             <div
@@ -20,7 +20,7 @@ const Card: React.FC<Prop> = (props) => {
                         <div>
                             <p className='font-light'>Project Name</p>
                             <p className='text-lg font-medium tracking-tight'>
-                                tyautemp
+                                {`${props.name}`}
                             </p>
                         </div>
                         <div className='transform hover:scale-110 transition transform'>
