@@ -16,6 +16,9 @@ env:
 
 cache: npm
 
+before_script:
+    - npm ci
+
 script:
     - npm run build
 
