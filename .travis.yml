@@ -13,11 +13,9 @@ env:
     global:
         - NODE_ENV='production'
         - BASE_URL='./'
+        - PATH=$PATH:./node_modules/.bin/
 
 cache: npm
-
-before_script:
-    - npm ci
 
 script:
     - npm run build
