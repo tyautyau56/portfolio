@@ -19,5 +19,5 @@ cache: npm
 script:
     - pwd
     - ls
-    - ./node_modules/.bin/webpack
+    - ls ./node_modules/.bin/
 
