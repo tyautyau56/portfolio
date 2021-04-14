@@ -2,6 +2,7 @@ import * as path from "path";
 import sass from "sass";
 import fibers from "fibers";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import CopyPlugin from "copy-webpack-plugin"
 
 const isProduction = process.env.NODE_ENV === "production";
 const isDevelopment = !isProduction;
@@ -103,6 +104,13 @@ module.exports = {
             minify: isProduction,
             template: path.join(__dirname, "src", "index.html"),
             scriptLoading: "defer"
+        }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.join(__dirname, "public"),
+                }
+            ]
         })
     ]
 };

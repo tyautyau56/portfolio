@@ -3,6 +3,6 @@ import { render } from 'react-dom'
 
 import 'tailwindcss/tailwind.css'
 
-import App from './App'
+import App from './component/App'
 
 render(<App />, document.getElementById('root'))
