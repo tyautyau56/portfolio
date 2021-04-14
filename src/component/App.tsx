@@ -6,14 +6,17 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fas, fab)
 
-class App extends React.Component<any, any> {
-    render() {
-        return (
-            <div className="min-h-screen flex justify-center items-center">
-                Weather Application
-            </div>
-        )
-    }
+// Component
+import Content from './Content'
+import Projects from './Projects'
+import Top from './Top'
+
+const App: React.VFC = () => {
+    return (
+        <StrictMode>
+            <Top />
+        </StrictMode>
+    )
 }
 
 export default App

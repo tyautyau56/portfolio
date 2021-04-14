@@ -1,13 +1,13 @@
 import React from 'react'
 
 import Card from './Card'
-import { PROJECTS_DETAIL } from './store/projectdetail'
+import { PROJECTS_DETAIL as pj_detail } from './store/projectdetail'
 
-const Projects = () => {
+const Projects: React.VFC = () => {
     return (
-        <div>
-            {PROJECTS_DETAIL.map((value, index) => {
-                return <Card {...value} />
+        <div className='min-h-screen flex justify-center flex-wrap'>
+            {pj_detail.map((value, index) => {
+                return <Card {...value} key={index} />
             })}
         </div>
     )
