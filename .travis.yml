@@ -16,8 +16,8 @@ env:
 
 cache: npm
 
-script:
-    - pwd
-    - ls
-    - ls ~
+before_script:
+    - npm i -g webpack webpack-cli
 
+script:
+    - npm run build
