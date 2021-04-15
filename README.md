@@ -1,6 +1,7 @@
 ## New tyautyau56's Portfolio
 
-[![CI](https://github.com/tyautyau56/portfolio/actions/workflows/build.yml/badge.svg)](https://github.com/tyautyau56/portfolio/actions/workflows/build.yml) 
+[![CI](https://github.com/tyautyau56/portfolio/actions/workflows/build.yml/badge.svg)](https://github.com/tyautyau56/portfolio/actions/workflows/build.yml) [![CircleCI](https://circleci.com/gh/tyautyau56/portfolio.svg?style=svg)](https://circleci.com/gh/tyautyau56/portfolio)
+
 
 tyautyau56 portfolio site repository
 <div align="center">
