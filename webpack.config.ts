@@ -3,7 +3,6 @@ import sass from "sass";
 import fibers from "fibers";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import CopyPlugin from "copy-webpack-plugin"
-import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer"
 
 const isProduction = process.env.NODE_ENV === "production";
 const isDevelopment = !isProduction;
@@ -112,7 +111,6 @@ module.exports = {
                     from: path.join(__dirname, "public"),
                 }
             ]
-        }),
-        new BundleAnalyzerPlugin()
+        })
     ]
 };
