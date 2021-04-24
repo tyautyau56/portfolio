@@ -37,3 +37,7 @@ Temporary Items
 # vscode
 .vscode
 
+# env
+.env
+
+
