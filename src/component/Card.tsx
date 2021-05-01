@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-type Prop = {
+type Props = {
     color: string
     name: string
     language: string
@@ -10,7 +10,7 @@ type Prop = {
     children?: never
 }
 
-const Card: React.VFC<Prop> = (props) => {
+const Card: React.VFC<Props> = (props) => {
     return (
         <div className='p-4'>
             <div
