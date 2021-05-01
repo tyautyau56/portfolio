@@ -6,7 +6,7 @@ import icon from '/resources/icon.jpg'
 const Top = () => {
     return (
         <div className='pt-16 p-8'>
-            <div className='border-teal-100 border-solid border-4 shadow-xl rounded-xl md: h-auto text-center'>
+            <div className='border-teal-400 border-solid border-4 rounded-xl md: h-auto text-center bg-white'>
                 <div className='p-8'>
                     <img
                         src={icon}
@@ -23,7 +23,7 @@ const Top = () => {
                             <li>徳山高専 情報電子工学科</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="flex items-center">
                         <ul className='flex'>
                             <li className='transform hover:scale-110 transition transform text-blue-400'>
                                 <a
